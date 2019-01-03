@@ -38,7 +38,8 @@ void createGraph(graph * g){      /*建立一个无向图的邻接矩阵*/
 	for(i = 0; i < g->vexnum ; i++)
 		for(j = 0; j < g->vexnum; j++)
 			g->arcs[i][j] = 0;       /*初始状态为0(断开状态)*/
-	printf("完成点的录入，请输入每条边的权值(0为断开)\n");
+	printf("完成点的录入，请输入每条边的权值(-1为断开)\n");
+	printf("格式为： 点A 点B\n");
 	scanf("%d %d", &i, &j);           		     /*读入边i,j*/   
 	while(i != -1){                     /*读入i,j为－1时结束*/
 		g->arcs[i][j] = 1;

@@ -108,6 +108,7 @@ int main()
 {
  
     int n ;
+    cout << "请输入元素个数" << endl;
     while(cin>>n)
     {
         BiTree root = NULL;

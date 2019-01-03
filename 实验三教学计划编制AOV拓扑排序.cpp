@@ -44,7 +44,7 @@ void toposort(int n){                			/*拓扑排序*/
     arcnode * p;
     m=0;
     for(v = 1;v <= n; v++)                        /*每个点遍历一遍*/
-    	printf("\n%d's vertex is  %d\n", v, adjlist[v].vertex); 
+    	//printf("\n%d's vertex is  %d\n", v, adjlist[v].vertex); 
         if(adjlist[v].vertex == 0){               /*若该点的出度为0*/ 
             rear=(rear+1)%max;               /*max is 100 环*/ 
             queue[rear]=v;                   /*送入队列*/ 

@@ -20,7 +20,7 @@ int binary_search(int key,int a[],int n) //自定义函数binary_search()
         }
     }
     if(count1==0)    //判断是否查找失敗
-        printf("查找失敗!");    //査找失敗输出no found
+        printf("\n-1\t查找失敗!");    //査找失敗输出no found
     return 0;
 }
 int main()
